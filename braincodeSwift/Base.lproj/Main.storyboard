@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="8sa-qa-MhZ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="braincodeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ptaq_wektor" translatesAutoresizingMaskIntoConstraints="NO" id="kXl-ET-fDv">
+                                <rect key="frame" x="52" y="54" width="217" height="220"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuK-U9-ONV">
+                                <rect key="frame" x="66" y="387" width="189" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="PARTNERZY">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YU2-zf-dh4" kind="push" id="a8k-BK-2eT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lhd-xS-Vfe">
+                                <rect key="frame" x="66" y="321" width="189" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="LOKALIZACJA">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="aS7-v1-wx5" kind="push" id="74b-Kj-xVW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lhd-xS-Vfe" firstAttribute="top" secondItem="kXl-ET-fDv" secondAttribute="bottom" constant="47" id="5U1-3L-9Zr"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="lhd-xS-Vfe" secondAttribute="bottom" constant="209" id="Ctu-Er-X4n"/>
+                            <constraint firstItem="cuK-U9-ONV" firstAttribute="top" secondItem="lhd-xS-Vfe" secondAttribute="bottom" constant="28" id="FYt-gz-40m"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kXl-ET-fDv" secondAttribute="trailing" constant="35" id="G4q-z0-xqb"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="kXl-ET-fDv" secondAttribute="bottom" constant="294" id="NMw-aE-ymN"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cuK-U9-ONV" secondAttribute="bottom" constant="143" id="QtO-MP-p2I"/>
+                            <constraint firstItem="lhd-xS-Vfe" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="50" id="UHZ-Ki-mqC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cuK-U9-ONV" secondAttribute="trailing" constant="49" id="Vq9-NY-qjj"/>
+                            <constraint firstItem="kXl-ET-fDv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="36" id="ar1-cY-blA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lhd-xS-Vfe" secondAttribute="trailing" constant="49" id="d5Y-cS-Kf6"/>
+                            <constraint firstItem="kXl-ET-fDv" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-10" id="gYm-wS-IoB"/>
+                            <constraint firstItem="cuK-U9-ONV" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="50" id="w8w-aJ-NfK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lr2-Na-egi"/>
+                    <connections>
+                        <outlet property="localizationButton" destination="lhd-xS-Vfe" id="MEH-cy-1hV"/>
+                        <outlet property="partnersButton" destination="cuK-U9-ONV" id="KG1-4g-ff3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="694" y="343"/>
+        </scene>
+        <!--LOKALIZACJA-->
+        <scene sceneID="07C-0M-0O6">
+            <objects>
+                <viewController id="aS7-v1-wx5" customClass="MapViewController" customModule="braincodeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nfD-Ry-cwB"/>
+                        <viewControllerLayoutGuide type="bottom" id="892-EI-Z9m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aW4-Q2-WtI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="satellite" translatesAutoresizingMaskIntoConstraints="NO" id="pkx-Ci-B4p">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="569"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pkx-Ci-B4p" firstAttribute="leading" secondItem="aW4-Q2-WtI" secondAttribute="leadingMargin" constant="-16" id="1IJ-DP-CxY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pkx-Ci-B4p" secondAttribute="trailing" constant="-16" id="44k-IW-WIh"/>
+                            <constraint firstItem="pkx-Ci-B4p" firstAttribute="top" secondItem="aW4-Q2-WtI" secondAttribute="top" id="6a2-dJ-8Cq"/>
+                            <constraint firstAttribute="centerY" secondItem="pkx-Ci-B4p" secondAttribute="centerY" constant="-0.5" id="mA2-9e-K7v"/>
+                            <constraint firstAttribute="centerX" secondItem="pkx-Ci-B4p" secondAttribute="centerX" id="pk1-ni-UoC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="LOKALIZACJA" id="QHs-xK-Y8z"/>
+                    <connections>
+                        <outlet property="mapView" destination="pkx-Ci-B4p" id="Xz4-X7-fLn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ijK-ne-KyD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039" y="347"/>
+        </scene>
+        <!--PARTNERZY-->
+        <scene sceneID="rGa-NE-2Ee">
+            <objects>
+                <viewController id="YU2-zf-dh4" customClass="PartnersViewController" customModule="braincodeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="adI-ze-plA"/>
+                        <viewControllerLayoutGuide type="bottom" id="EN0-Ea-ARk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bKr-Az-OXo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" misplaced="YES" image="sjsi" translatesAutoresizingMaskIntoConstraints="NO" id="QKD-JQ-oMd">
+                                <rect key="frame" x="73" y="279" width="171" height="109"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="tLR-uI-Exl" appends="YES" id="HkZ-e0-7NK"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo_testerzy_ptaq" translatesAutoresizingMaskIntoConstraints="NO" id="fPl-P1-eoC">
+                                <rect key="frame" x="74" y="172" width="168" height="66"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="mzI-a1-PPa" appends="YES" id="cIw-jP-FIm"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" label="partnersView">
+                            <bool key="isElement" value="NO"/>
+                        </accessibility>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="QKD-JQ-oMd" firstAttribute="top" secondItem="fPl-P1-eoC" secondAttribute="bottom" constant="41" id="AGu-cE-T97"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="fPl-P1-eoC" secondAttribute="trailing" constant="62" id="SrE-51-Twx"/>
+                            <constraint firstItem="QKD-JQ-oMd" firstAttribute="leading" secondItem="bKr-Az-OXo" secondAttribute="leadingMargin" constant="57" id="hVA-7D-rqv"/>
+                            <constraint firstItem="fPl-P1-eoC" firstAttribute="leading" secondItem="bKr-Az-OXo" secondAttribute="leadingMargin" constant="58" id="jE6-aY-PJ6"/>
+                            <constraint firstItem="fPl-P1-eoC" firstAttribute="top" secondItem="adI-ze-plA" secondAttribute="bottom" constant="108" id="nr6-WR-4Y1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QKD-JQ-oMd" secondAttribute="trailing" constant="60" id="y04-5x-1Vm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PARTNERZY" id="tec-ia-mNu"/>
+                    <connections>
+                        <outlet property="cracow" destination="fPl-P1-eoC" id="4gY-oF-tWu"/>
+                        <outlet property="poznan" destination="QKD-JQ-oMd" id="SmR-3J-PjC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DFK-gS-UP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="mzI-a1-PPa">
+                    <connections>
+                        <action selector="openWebView:" destination="YU2-zf-dh4" id="R5Y-S8-4Bq"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="tLR-uI-Exl">
+                    <connections>
+                        <action selector="openWebView:" destination="YU2-zf-dh4" id="E7E-EH-9eP"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="mBD-we-PrY">
+                    <connections>
+                        <action selector="openWebView:" destination="YU2-zf-dh4" id="dPu-iR-LOO"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="KfN-m3-o7q">
+                    <connections>
+                        <action selector="openWebView:" destination="YU2-zf-dh4" id="j3y-ST-oad"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="35V-tV-fCS">
+                    <connections>
+                        <action selector="openWebView:" destination="YU2-zf-dh4" id="7By-ux-vdk"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1039" y="992"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="QWn-Zj-9GO">
+            <objects>
+                <viewController storyboardIdentifier="webView" id="kz1-oE-zuq" customClass="WebViewController" customModule="braincodeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <webView key="view" contentMode="scaleToFill" id="3eL-4J-GHr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </webView>
+                    <navigationItem key="navigationItem" id="rmZ-GV-q08"/>
+                    <connections>
+                        <outlet property="webView" destination="3eL-4J-GHr" id="ckD-dH-ON6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8n5-W9-kuT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1394" y="992"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="blb-MR-qyM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8sa-qa-MhZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dUg-te-myy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="n2Y-u5-tBE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OK8-Ob-G9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="343"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo_testerzy_ptaq" width="200" height="38"/>
+        <image name="ptaq_wektor" width="600" height="342"/>
+        <image name="sjsi" width="200" height="77"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+    <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+</document>

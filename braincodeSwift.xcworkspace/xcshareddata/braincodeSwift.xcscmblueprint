@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E791A2124273D21FC1B6644D9B6FD6AD86F84614",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E791A2124273D21FC1B6644D9B6FD6AD86F84614" : 0,
+    "722491245B7E6EFC2AA3EB8905A39B2E3FD25440" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "48EAF646-C626-4D47-AD78-B433A65DC226",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E791A2124273D21FC1B6644D9B6FD6AD86F84614" : "PTAQXcode7\/",
+    "722491245B7E6EFC2AA3EB8905A39B2E3FD25440" : "braincodeSwift"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "braincodeSwift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 203,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "braincodeSwift.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/bielski\/braincodeSwift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "722491245B7E6EFC2AA3EB8905A39B2E3FD25440"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/bielski\/PTAQXcode7.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E791A2124273D21FC1B6644D9B6FD6AD86F84614"
+    }
+  ]
+}
